@@ -1,0 +1,19 @@
+package rafik;
+public class Main {
+    public static void main(String[] args) {
+        Animal animal = new Animal("Generic Animal", 5);
+        Dog dog = new Dog("Puppy", 3, "Golden );
+        Cat cat = new Cat("Meo", 2, true);
+        
+        animal.eat();
+        animal.makeSound();
+        
+        dog.eat();
+        dog.makeSound();
+        dog.fetch();
+        
+        cat.eat();
+        cat.makeSound();
+        cat.scratch();
+    }
+}
