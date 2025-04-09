@@ -1,0 +1,26 @@
+package rafik;
+
+public class Dealership {
+
+	public static void main(String[] args) {
+		
+		Customer cust = new Customer();
+		
+		cust.setName("Rafik");
+		cust.setAddress("Pune");
+		cust.setCashOnHand(1200000);
+		
+		Vehicle vehicle = new Vehicle("Maruti","XYZ",500000);
+		
+		Employee emp = new Employee();
+		
+		cust.purchaseCar(vehicle,emp,true);
+		
+		Vehicle car = new Vehicle("Volvo", "S90", 70000000);
+		
+		boolean value = car.equals(vehicle);
+		System.out.println(value);
+		
+	}
+
+}
