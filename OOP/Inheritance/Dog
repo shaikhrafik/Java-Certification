@@ -1,0 +1,22 @@
+package rafik;
+public class Dog extends Animal {
+    private String breed;
+    
+    public Dog(String name, int age, String breed) {
+        super(name, age);
+        this.breed = breed;
+    }
+    
+    @Override
+    public void makeSound() {
+        System.out.println(getName() + " barks");
+    }
+    
+    public void fetch() {
+        System.out.println(getName() + " is fetching");
+    }
+    
+    public String getBreed() {
+        return breed;
+    }
+}
